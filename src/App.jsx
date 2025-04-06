@@ -5,7 +5,6 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-
   console.log('Printing the secret value = ', import.meta.env.REACT_APP_API_KEY);
   console.log('Printing the secret value = ', process.env.REACT_APP_API_KEY);
 
