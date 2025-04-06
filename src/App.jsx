@@ -2,24 +2,15 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { withAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
-import '@aws-amplify/ui-react/styles.css';
 
 function App() {
   const [count, setCount] = useState(0)
-  const App = ({ signOut, user }) => {
-    conosle.log('You are signed out.')
-  };
+
   console.log('Printing the secret value = ', import.meta.env.REACT_APP_API_KEY);
   console.log('Printing the secret value = ', process.env.REACT_APP_API_KEY);
 
   return (
     <>
-      <div style={styles.container}>
-       <Heading level={1}>Hello {user.username}</Heading>
-       <Button onClick={signOut}>Sign out</Button>
-       <h2>Amplify Todos</h2>
-      </div>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -44,4 +35,4 @@ function App() {
   )
 }
 
-export default withAuthenticator(App);
+export default App
