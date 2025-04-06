@@ -10,6 +10,8 @@ function App() {
   const App = ({ signOut, user }) => {
     conosle.log('You are signed out.')
   };
+  console.log('Printing the secret value = ', import.meta.env.REACT_APP_API_KEY);
+  console.log('Printing the secret value = ', process.env.REACT_APP_API_KEY);
 
   return (
     <>
